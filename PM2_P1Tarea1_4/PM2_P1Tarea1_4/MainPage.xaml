@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2_P1Tarea1_4.MainPage">
+
+    <StackLayout Background="#BC8F8F">
+        
+        <Label Text="Bienvenido" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="36" Padding="30,50,30,20"/>
+        <Label Text="Elaborado por:" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="25" Padding="30,10,30,5"/>
+        <Label Text="Angie Nuñez - 201810070042" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="20" Padding="30,0,30,5"/>
+        <Label Text="Aylin Funez -201830070020" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="20" Padding="30,0,30,100"/>
+
+
+        <Button x:Name="btnAgregar" Text="Agregar"  Background="#4682B4" TextColor="Aquamarine" FontSize="Large" FontAttributes="Bold"  Padding="30,10,30,10" Clicked="btnAgregar_Clicked"/>
+        <Button x:Name="btnlist" Text="Lista"  Background="#4682B4" TextColor="Aquamarine" FontSize="Large" FontAttributes="Bold"  Padding="30,10,30,10" Clicked="btnlist_Clicked"/>
+
+        
+
+    </StackLayout>
+
+</ContentPage>

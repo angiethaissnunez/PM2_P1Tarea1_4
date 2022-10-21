@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2_P1Tarea1_4.Views.PageLocal"
+             Background="#BC8F8F">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame  BackgroundColor="#4682B4" Padding="12">
+                <Label Text="Fotos almacenadas local" 
+                       HorizontalOptions="CenterAndExpand"
+                       TextColor="White"
+                       FontSize="16"
+                       />
+            </Frame>
+
+            <ListView x:Name="listaImagen" 
+                      HasUnevenRows="True"
+                      ItemTapped="listaImagen_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Grid.RowSpan="2"
+                                       Source="{Binding descripcion}"
+                                       Aspect="AspectFill"
+                                       HeightRequest="150"
+                                       WidthRequest="150" />
+
+                                <Label Grid.Column="1"
+                                       Text="{Binding nombre}"
+                                       FontAttributes="Bold" />
+                            </Grid>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
